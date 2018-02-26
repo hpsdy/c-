@@ -14,5 +14,10 @@ int main() {
     cout << &c << endl;
     cout << b << endl;
     cout << c << endl;
+    c = 10000;
+    cout << &b << endl;
+    cout << &c << endl;
+    cout << b << endl;
+    cout << c << endl;
     return 0;
 }
