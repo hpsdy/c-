@@ -1,0 +1,180 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <title>Unise Frontend</title>
+    {{#SCRIPT}}
+    {{/SCRIPT}}
+    <style type="text/css">
+    .pre {
+        white-space: pre-wrap
+    }
+    EM {
+        COLOR: red; font-style:normal
+    }
+    body {
+        padding-top: 70px;
+    }
+    .foot {
+        height:50px;
+        width:100%;
+        background:#EEEEEE;
+        color:#000;
+        font-size:14px;
+        text-align:center;
+    }
+    a:hover {
+        text-decoration:none;
+    }
+    </style>
+  </head>
+
+  <body>
+     <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:#01184A;">
+      <div class="container">
+        <div class="navbar-header">
+            <span class="navbar-brand" style="color: #FFF;font-size:27px;font-weight:bold;">UniSE Frontend</span>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            {{#ONE_PAGE_INFO_LEAD}}
+            {{PAGE_LEAD}}
+            {{/ONE_PAGE_INFO_LEAD}}
+          </ul>
+      </div>
+      </div>
+    </div>
+    <div class="container">
+       <div class="jumbotron">
+       <span style="font-size:13px;color:#01184A;font-weight:bold;">&gt;&gt;SearchEngineProcessor</span><br>
+        {{#INPUT}}
+        <div class='input_box' style="font-size:14px;background-color:#F1F9F7;">      
+        <form method='GET' action='/search' enctype='enctype=application/x-www-form-urlencoded'>
+         <table border=0 style="font-size:14px;">
+            <tr>
+                <td>
+                    <table borer=0 style="font-size:14px;">
+                      <tr>
+                        <td>Query Tree:</td>
+                        <td><textarea style='max-width:600px;max-height:300px' name='query' cols=46 rows=3>{{LAST_QUERY}}</textarea></td>
+                        <td>&nbsp;&nbsp;&nbsp;NumOfResult:&nbsp;<input name='num_results' value='{{LAST_NUM_RESULTS}}' style='height:30px;width:60px;'/></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td><input type='submit' value='search' style='height:30px;width:70px;background-color:#01184A;color:#FFF;border:0px'/></td>
+                      </tr>
+                    </table>
+                </td>
+            </tr>
+         </table>
+        <div id='idtest'>
+        <table border=0 style='font-size:14px;'>
+          <tr align='center'>
+            <td>RawQuery:</td>
+            <td><input name='raw_query' value='{{LAST_RAW_QUERY}}'style='height:30px;width:220px'/></td>
+          </tr>
+          <tr align='center'>
+            <td>StartResult:</td>
+            <td><input name='start_result' value='{{LAST_START_RESULT}}'style='height:30px;width:120px'/></td>
+            <td>&nbsp;&nbsp;StartDocid:</td>
+            <td><input name='start_docid' value='{{LAST_START_DOCID}}' style='height:30px;width:80px;'/></td>
+            <td>&nbsp;&nbsp;RetrieveTimeOut:</td>
+            <td><input name='retrieve_timeout' value='{{LAST_RETRIEVE_TIMEOUT}}' style='height:30px;width:100px;'/></td>
+            <td>&nbsp;&nbsp;RetrieveDepth:</td>
+            <td><input name='retrieve_depth' value='{{LAST_RETRIEVE_DEPTH}}' style='height:30px;width:140px;'/></td>
+          </tr>
+          <tr align='center'>
+            <td>RecallDocs:</td>
+            <td><input name='recall_docs' value='{{LAST_RECALL_DOCS}}' style='height:30px;width:120px;'/></td>
+            <td>&nbsp;&nbsp;SessionID:</td>
+            <td><input name='session_id' value='{{LAST_SESSION_ID}}' style='height:30px;width:80px;'/></td>
+            <td>&nbsp;&nbsp;BusinessID:</td>
+            <td><input name='business_id' value='{{LAST_BUSINESS_ID}}' style='height:30px;width:100px;'/></td>
+            <td>&nbsp;&nbsp;RangeRestrictAnno:</td>
+            <td><input name='range_restriction_annotation' value='{{LAST_RANGE_RESTRICTION_ANNOTATION}}' style='height:30px;width:140px;'/></td>
+          </tr>
+          <tr align='center'>
+            <td>SortParams:</td>
+            <td><input name='sort_params' value='{{LAST_SORT_PARAMS}}' style='height:30px;width:120px;' /></td>
+            <td>&nbsp;&nbsp;SampleID:</td>
+            <td><input name='sample_id' value='{{LAST_SAMPLE_ID}}' style='height:30px;width:80px;'/></td>
+            <td>&nbsp;&nbsp;RangeMin:</td>
+            <td><input name='range_min' value='{{LAST_RANGE_MIN}}' style='height:30px;width:100px;'/></td>
+            <td>&nbsp;&nbsp;RangeMax:</td>
+            <td><input name='range_max' value='{{LAST_RANGE_MAX}}' style='height:30px;width:140px;'/></td/>
+          </tr>
+          <tr><td colspan=8>
+            <table borer=0 style='font-size:14px;'>
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experiments:<br>(format:k1:v1,k2:v2,k3:v3)</td>
+                  <td><textarea name='experiments' cols='57' rows=3 style='max-width:600px;max-height:300px'>{{LAST_EXPERIMENTS}}</textarea></td>
+                </tr>
+            </table>
+         </td></tr>
+        </table>        
+        </div>
+       </form>
+      </div>
+    {{/INPUT}}
+  <hr size="1" noshade="noshade" style="border:1px #cccccc dotted;">
+  {{#RESULT_OUTPUT}}
+  <div>
+   <span style="font-size:13px;color:#01184A;font-weight:bold;">&gt;&gt;SearchResultInfo</span><br>     
+    <div class='top_info' style="font-size:14px;background-color:#CCFFCC;line-height:40px;">
+      NumResults:{{NUM_RESULTS}}&nbsp;
+      ExactNumResults:{{EXACT_NUM_RESULTS}}&nbsp;
+      EstimatedNumResults:{{EST_NUM_RESULTS}}&nbsp;
+      DocsRetrieved:{{DOCS_RETRIEVED}}&nbsp;
+      DocsRecalled:{{DOCS_RECALLED}}&nbsp;
+      SearchTime:{{SEARCH_TIME}}ms&nbsp;
+      StatusCode:{{STATUS_CODE}}&nbsp;
+      StatusMsg:{{STATUS_MSG}}&nbsp;
+      RpcInfo:{{RPC_INFO}}
+      <br>
+      <table border=0 style="font-size:14px;"><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><div style="font-size:14px;line-height:30px;">
+          {{#SE_PLUGIN_RESPONSE}}
+              <div style="font-size:14px;line-height:30px;">
+              {{SE_PLUGIN_NAME}}&nbsp;
+              enable[{{SE_PLUGIN_ENABLE}}]&nbsp;{{SE_PLUGIN_INFORMATION}}<br>
+              </div>
+          {{/SE_PLUGIN_RESPONSE}}
+          {{#ENGINE_UNIT_RESPONSE}}
+            From:{{ENGINE_UNIT_NAME}}&nbsp;
+            Type:{{ENGINE_UNIT_TYPE}}&nbsp;
+            NumResults:{{ENGINE_UNIT_NUM_RESULTS}}&nbsp;
+            EstimatedNumResults:{{ENGINE_UNIT_EST_NUM_RESULTS}}&nbsp;
+            DocsRetrieved:{{ENGINE_UNIT_DOCS_RETRIEVED}}&nbsp;
+            DocsRecalled:{{ENGINE_UNIT_DOCS_RECALLED}}&nbsp;
+            SearchTime:{{ENGINE_UNIT_SEARCH_TIME}}ms&nbsp;
+            <br>
+              <div style="font-size:14px;line-height:30px;">
+              {{#PLUGIN_RESPONSE}}
+                {{PLUGIN_NAME}}&nbsp;
+                enable[{{PLUGIN_ENABLE}}]&nbsp;{{PLUGIN_INFORMATION}}<br>
+              {{/PLUGIN_RESPONSE}}
+              </div>
+          {{/ENGINE_UNIT_RESPONSE}}
+      </div></td></tr></table>
+    </div>
+   <hr size="1" noshade="noshade" style="border:1px #cccccc dotted;">
+   <span style="font-size:13px;color:#01184A;font-weight:bold;">&gt;&gt;SearchResult</span><br>
+   {{#ONE_RESULT}}
+     <div style="line-height:8px;">&nbsp;</div>
+     <table ><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>     
+      <td align='middle' width='40px'><font size=4><b>{{RESULT_ID}}</b></font></td>
+      <td align='middle' width='80px'><font size=3><b>{{RESULT_DOCID}}</b></font></td>
+      <td align='middle' width='40px'><font size=2 color='red'><b>{{RESULT_SCORE}}</b></font></td>
+      <td>
+       <div style="font-size:15px;word-break:break-all;word-wrap:break-word;line-height:22px;">{{RESULT_SNIPPET}}</div>
+      </td>
+     </tr></table>
+   {{/ONE_RESULT}}
+  {{/RESULT_OUTPUT}}
+  </div>
+    <hr size="1" noshade="noshade" style="border:1px #cccccc dotted;">
+    <div class="foot">Any Question, Contact to unise@baidu.com<br/>2015-04-17</div>
+  </div>
+  </div>
+
+ </body>
+</html>

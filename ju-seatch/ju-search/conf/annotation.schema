@@ -1,0 +1,184 @@
+annotation_schemas {
+    id : 0
+    annotation_name : "resource_id"
+    section_id : 0
+    section_name : ""
+    annotation_type : NUMBER
+    store_type : 1
+    number_schema {
+          min : 0
+          max : 1000000000
+          accuracy : 8
+    }
+}
+
+annotation_schemas {
+    id : 1
+    annotation_name : "area_id"
+    section_id : 0
+    section_name : ""
+    annotation_type : NUMBER
+    store_type : 1
+    number_schema {
+          min : 0
+          max : 10000000000
+          accuracy : 8
+    }
+}
+
+annotation_schemas {
+    id : 2
+    annotation_name : "city_id"
+    section_id : 0
+    section_name : ""
+    annotation_type : NUMBER
+    store_type : 1
+    number_schema {
+          min : 0
+          max : 10000000000
+          accuracy : 8
+    }
+}
+
+annotation_schemas {
+    id : 3
+    annotation_name : "title"
+    section_id : 0
+    section_name : "text_section_tc"
+    annotation_type : TEXT
+    store_type : 3
+    text_schema {
+          index_type : TEXT_SEG
+          trans_conversion : true
+          scw_out_flags : 4
+    }
+}
+
+annotation_schemas {
+    id : 4
+    annotation_name : "source"
+    section_id : 0
+    section_name : "text_section"
+    annotation_type : TEXT
+    store_type : 3
+    text_schema {
+          index_type : TEXT_SEG
+          trans_conversion : true
+    }
+}
+
+annotation_schemas {
+    id : 5
+    annotation_name : "image_url"
+    section_id : 0
+    section_name : "text_section"
+    annotation_type : TEXT
+    store_type : 1
+    text_schema {
+          index_type : TEXT_SEG
+          trans_conversion : true
+    }
+}
+
+annotation_schemas {
+    id : 6
+    annotation_name : "content"
+    section_id : 0
+    section_name : "text_section_tc"
+    annotation_type : TEXT
+    store_type : 3
+    text_schema {
+          index_type : TEXT_SEG
+          trans_conversion : true
+          scw_out_flags : 4
+    }
+}
+
+annotation_schemas {
+    id : 7
+    annotation_name : "na_redirect_url"
+    section_id : 0
+    section_name : "text_section"
+    annotation_type : TEXT
+    store_type : 1
+    text_schema {
+          index_type : TEXT_SEG
+          trans_conversion : true
+    }
+}
+
+annotation_schemas {
+    id : 8
+    annotation_name : "wap_redirect_url"
+    section_id : 0
+    section_name : "text_section"
+    annotation_type : TEXT
+    store_type : 1
+    text_schema {
+          index_type : TEXT_SEG
+          trans_conversion : true
+    }
+}
+
+annotation_schemas {
+    id : 9
+    annotation_name : "score"
+    section_id : 0
+    section_name : ""
+    annotation_type : NUMBER
+    store_type : 1
+    number_schema {
+          min : 0
+          max : 1000000000
+          accuracy : 8
+    }
+}
+
+annotation_schemas {
+    id : 10
+    annotation_name : "publish_time"
+    section_id : 0
+    section_name : ""
+    annotation_type : NUMBER
+    store_type : 1
+    number_schema {
+          min : 0
+          max : 10000000000
+          accuracy : 8
+    }
+}
+
+annotation_schemas {
+    id : 11
+    annotation_name : "category_id"
+    section_id : 0
+    section_name : ""
+    annotation_type : TEXT
+    store_type : 3
+    text_schema {
+          index_type : TEXT_SEG_BY_SEP
+          trans_conversion : false
+    }
+}
+
+annotation_schemas {
+    id : 12
+    annotation_name : "column_id"
+    section_id : 0
+    section_name : ""
+    annotation_type : TEXT
+    store_type : 2
+}
+
+annotation_schemas {
+    id : 13
+    annotation_name : "tags"
+    section_id : 0
+    section_name : ""
+    annotation_type : TEXT
+    store_type : 3
+    text_schema {
+          index_type : TEXT_SEG_BY_SEP
+          trans_conversion : false
+    }
+}

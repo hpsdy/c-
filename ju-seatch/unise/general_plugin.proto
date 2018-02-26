@@ -1,0 +1,83 @@
+// define the general search request
+// Author: wangguangyuan@baidu.com (Guangyuan Wang)
+
+package unise;
+import "annotation_schema.proto";
+
+/// @brief 索引工具的协议
+enum IndexFieldFormatType {
+    KV       = 1;
+    JSON     = 2;
+};
+
+message KeyValueFormat {
+    // 所生成何种类型的annotation，通过id标识
+    required uint32 annotation_id = 1;
+    // 所生成annotation的类型
+    required AnnotationType annotation_type = 2;
+};
+
+message JsonFormat {
+    // 所生成annotation的id
+    required uint32 annotation_id = 1;
+    // 所生成annotation的类型
+    required AnnotationType annotation_type = 2;
+    // 抽取模式，来指定json对象的一个具体取值的key
+    // example: .key1.key2  代表取json的名为key1的对象的key2字段
+    // example: @key1.key2  代表取json的名为key1的所有数组元素的key2字段，以","连接
+    // example: @key1       代表取json的名为key1的数组的元素，以","连接
+    required string key_pattern          = 3;
+};
+
+// das字段抽取定义
+message IndexFieldFormat {
+    // 对das一行的第几个字段进行定义，docid的下标是0，依次递增
+    required uint32 index = 1;
+    // 该字段是一个普通的字符串值，还是一个json的字符串表示
+    required IndexFieldFormatType type = 2;
+    // 如果是普通字符串，那么定义其抽取格式
+    optional KeyValueFormat key_value_format = 3;
+    // 如果是json的字符串，定义其抽取格式
+    // note:das导出的一个json字段，可以生成多个annotation，所以这里采用数组，分别制定每个annotation
+    repeated JsonFormat json_formats = 4;
+};
+
+// 用于配置das的数据格式
+// 根据配置，自动从das的第几个字段，抽取annotation
+message FormatConfig {
+    repeated IndexFieldFormat index_field_formats = 1;
+};
+
+// GeneralScorer的配置项
+// note: general scorer的打分，不需要annotation的原文存储
+message AnnotationScorerItem {
+    required uint32 annotation_id = 1;   ///< 命中的AnnotationId
+    required int32 hit_score = 2;   ///< 命中一次，加hit_score分
+    required int32 token_score = 3; ///< query node命中，加weight*token_score分
+};
+
+message GeneralScorerConfig {
+    repeated AnnotationScorerItem annotation_items = 1;
+};
+
+// GeneralResultFiller的配置项
+// note: general filler，需要annotation的原文存储
+message AnnotationFillerItem {
+    required uint32 annotation_id = 1;
+    optional string snippet_key   = 2;   ///< 回传时候，采用的key名，默认，取annotation_name
+    optional AnnotationType type  = 3;   ///< 暂时拿不到schema，需要与schema定义一致
+};
+
+// 是针对FactDoc的Annotation
+message GeneralFillerConfig {
+    repeated AnnotationFillerItem annotation_items = 1;
+};
+
+// GeneralCluster的配置项
+// note: general cluster，需要annotation的原文存储
+message AnnotationClusterItem {
+    required uint32 annotation_id = 1; ///< 按照哪个Annotation进行cluster
+    required int32 number         = 2; ///< 最多保留多少个结果
+    optional AnnotationType type  = 3; ///< 暂时拿不到schema,需要与schema定义一致
+};
+

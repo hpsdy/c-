@@ -1,0 +1,166 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unise Frontend</title>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.js"></script>
+    <style type="text/css">
+    * {
+        margin:0px;
+        padding:0px;
+    }
+    .head {
+        height:50px;
+        width:100%;
+        background:#6CF;
+        color:#000;
+    }
+    .foot {
+        height:50px;
+        width:100%;
+        background:#EEEEEE;
+        color:#000;
+        font-size:14px;
+        text-align:center;
+    }
+    .output_area00{  
+        width:100%;
+        overflow:auto;  
+        word-break:break-all; 
+    }
+    .input_area00{  
+        width:100%;
+        overflow:auto;  
+        word-break:break-all; 
+    }
+    body {
+        padding-top: 70px;
+    }
+    </style>
+  </head>
+  <body>
+     <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:#01184A;">
+      <div class="container">
+        <div class="navbar-header">
+            <span class="navbar-brand" style="color: #FFF;font-size:27px;font-weight:bold;">UniSE Frontend</span>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            {{#ONE_PAGE_INFO_LEAD}}
+            {{PAGE_LEAD}}
+            {{/ONE_PAGE_INFO_LEAD}}
+          </ul>
+      </div>
+      </div>
+    </div>
+
+   {{#INPUT}}
+   {{#RESULT_OUTPUT}}
+    <div class="container">
+       <div class="jumbotron" style="height:700px">
+           <span style="font-size:13px;color:#01184A;font-weight:bold;">&gt;&gt;BinlogProcessor&gt;&gt;base64 convert to Protobuf TextFormat</span><br>
+           <hr size="1" noshade="noshade" style="border:1px #cccccc dotted;">
+               <table><tr><td>
+                <div class="col-md-4">
+                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                      <li name='req_name' id='req_check_box' class="active"><a id="monitor_tab" href="#monitor" role="tab" data-toggle="tab">GeneralSearchRequest</a></li>
+                      <li name='rsp_name' id='rsp_check_box'><a id="manage_tab" href="#manage" role="tab" data-toggle="tab">GeneralSearchResponse</a></li>
+                       </ul>
+                    <div style="height:5px;"></div>
+                    <div class="tab-content">
+                    <!--- 111 --->
+                      <div class="tab-pane active" name='monitor' id="monitor" style="width:980px"> 
+                       <form method='GET' name='request_form' action='/binlog' enctype='enctype=application/x-www-form-urlencoded' onsubmit="return request_submit()">
+                        <table width='980px' align='center' border='0'>
+                            <tr width='100%' height='60'><td colspan='3' align='right'>
+                                <input type='submit' value='ConvertRequest' style='font-size:14px;height:40px;width:140px;background-color:#01184A;color:#FFF;border:0px'/><br>
+                            </td></tr>
+                            <tr><td width='50%'>
+                               <textarea style='font-size:14px;max-width:600px;max-height:450px' class='input_area00' name='request_base64' rows='20' onpropertychange="this.style.posHeight=this.scrollHeight">{{LAST_REQUEST_BASE64}}</textarea>
+                            </td><td>&nbsp;<span style="font-size:14px;color:#01184A;font-weight:bold;">=></span>&nbsp;</td><td width='50%'>
+                               <textarea style="font-size:14px;" class='output_area00' name='request_text' rows='20' onpropertychange="this.style.posHeight=this.scrollHeight">{{REQUEST_TEXT}}</textarea>
+                            </td></tr>
+                        </table>
+                       </form>
+                       </div>
+                      <!--- 222 --->
+                      <div class="tab-pane" name='manage' id="manage" style="width:980px">
+                       <form method='GET' name='response_form' action='/binlog' enctype='enctype=application/x-www-form-urlencoded' onsubmit="return response_submit()">
+                       <table style="width:980px" align='center' border='0'>
+                            <tr width='100%' height='60'><td colspan='3' align='right'>
+                                <input type='submit' id='response_button' value='ConvertResponse' style='font-size:14px;height:40px;width:140px;background-color:#01184A;color:#FFF;border:0px'/><br>
+                            </td></tr>
+                            <tr><td width='50%'>
+                               <textarea style="font-size:14px;max-width:600px;max-height:450px" class='input_area00' name='response_base64' id='response_base64' rows='20' onpropertychange="this.style.posHeight=this.scrollHeight">{{LAST_RESPONSE_BASE64}}</textarea>
+                            </td><td>&nbsp;<span style="font-size:14px;color:#01184A;font-weight:bold;">=></span>&nbsp;</td><td width='50%'>
+                               <textarea style="font-size:14px;" class='output_area00' name='response_text' id='response_text' rows='20' onpropertychange="this.style.posHeight=this.scrollHeight">{{RESPONSE_TEXT}}</textarea>
+                            </td></tr>
+                        </table>
+                      </form>
+                      </div>
+                   </div>
+                </div>
+           </td></tr><tr><td><br>
+           </td></tr></table>
+        <div class="foot">Any Question, Contact to vsce@baidu.com<br/>2014-09-17</div>
+        </div>
+    </div>
+
+   {{/RESULT_OUTPUT}}
+   {{/INPUT}}
+
+  {{#SCRIPT}}
+  {{/SCRIPT}}
+  <script type="text/javascript">
+    function request_submit() {
+        if (request_form.request_base64.value == '') {
+            alert('request base64 null.');
+            return false;
+        }
+        return true;
+    }
+    function response_submit() {
+        if (response_form.response_base64.value == '') {
+            alert('response base64 null.');
+            return false;
+        }
+        return true;
+    }
+
+   var cparam = get_param();
+   for (j = 0; j < cparam.length; ++ j) {
+     if (cparam[j] == 'response_base64') {
+       var a = document.getElementsByTagName('div');
+       for (var i = 0; i < a.length; ++ i) {
+           if (a[i].className == 'tab-pane active') {
+               a[i].className = 'tab-pane';
+           } else if (a[i].className == 'tab-pane') {
+               a[i].className = 'tab-pane active';
+           } 
+       }   
+       var obj = document.getElementById('req_check_box');
+       if (obj.className == 'active') {
+           obj.className  = '';
+           document.getElementById('rsp_check_box').className = 'active';
+       }       
+       break;
+      }
+    }
+    function get_param(){
+        querystr = window.location.href.split('?');
+        if(querystr[1]){
+            kv = querystr[1].split('&');
+            var keys = [];
+            for(i = 0; i < kv.length; i++){
+                tmp_arr = kv[i].split('=');
+                keys.push(tmp_arr[0]);
+            }
+        }
+        return keys;
+    }
+  </script>
+ </body>
+</html>

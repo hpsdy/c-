@@ -1,0 +1,12 @@
+package world;
+message hello_w{
+	required int32 id=1;
+	required string str=2;
+	optional int32 opt=3;
+	repeated string some=5;
+	message ctype{
+		required int32 id=1;
+		required string desc=2;
+	}
+	required ctype oc = 4;
+}

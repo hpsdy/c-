@@ -1,0 +1,16 @@
+#include"head.h"
+istream & read(istream & in){
+	string str;
+	getline(in,str);
+	cout<<str<<endl;
+	auto code = in.rdstate();
+	cout<<"state:"<<code<<endl;
+	in.clear();
+	return in;
+}
+int main(){
+	read(cin);
+	cout<<"+==============+"<<endl;
+	read(cin);
+	return 0;
+}

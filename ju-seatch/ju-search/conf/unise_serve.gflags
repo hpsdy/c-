@@ -1,0 +1,6 @@
+--monitor_text_state_keys=start_date,demo_doc_num,proc_res,sys_free
+--monitor_number_state_keys=search_time,docs_recalled,docs_retrieved,demo_doc_produce,demo_doc_destroy
+--das_inc_has_from_id=false
+--log_search_info=true
+--recall_max_docs=500
+--max_wordseg_buffer_size=2000000
