@@ -37,8 +37,10 @@ namespace user {
             std::cout << " end" << std::endl;
             return first + sz;
         }
-        ~String(){
-            alloc.deallocate(first,sz);
+        ~String() {
+            if (first) {
+                alloc.deallocate(first, sz);
+            }
         }
       private:
         std::size_t sz;
@@ -68,5 +70,6 @@ namespace user {
         return io;
     }
     void test();
+    std::allocator<char> String::alloc;
 }
 #endif
