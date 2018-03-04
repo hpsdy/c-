@@ -3,7 +3,6 @@
 #include <cstdlib>
 int main() {
     user::String s1("你好呀");
-
     user::String s2(s1);
     using user::String;
     String s3 = add(s1, s2);
