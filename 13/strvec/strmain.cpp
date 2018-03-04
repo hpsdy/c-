@@ -7,11 +7,11 @@ int main() {
     using user::String;
     String s3 = add(s1, s2);
     String s4("最后一个");
-    s4 += s3;
+    s4 = s4 + s3;
     std::cout << s1;
     std::cout << s2;
     std::cout << s3;
     std::cout << s4;
     test();
-    return std::EXIT::SUCESS;
+    return std::EXIT_SUCESS;
 }

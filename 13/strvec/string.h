@@ -7,7 +7,7 @@ namespace user {
     class String {
         friend String operator+(const String &str1, const String &str2);
         friend String add(const String &str1, const String &str2);
-        friend std::iostream &operator<<(std::iostream &io, const String &str);
+        friend std::ostream &operator<<(std::ostream &io, const String &str);
         friend void test() {
             std::cout << "friend func test" << std::endl;
         }
@@ -17,23 +17,23 @@ namespace user {
             std::cout << "char construct" << std::endl;
             std::uninitialized_copy(p, p + sz, first);
         }
-        String(const String &str): sz(str.size()), first(alloc.allocate(sz)) {
+        String(const String &str): sz(str.sz), first(alloc.allocate(sz)) {
             std::cout << "string construct" << std::endl;
             std::uninitialized_copy(str.begin(), str.end(), first);
         }
-        String *begin() const {
+        char *begin() const {
             std::cout << "const begin" << std::endl;
             return first;
         }
-        String *end() const {
+        char *end() const {
             std::cout << "const end" << std::endl;
             return first + sz;
         }
-        String *begin() {
+        char *begin() {
             std::cout << " begin" << std::endl;
             return first;
         }
-        String *end() {
+        char *end() {
             std::cout << " end" << std::endl;
             return first + sz;
         }
@@ -48,22 +48,22 @@ namespace user {
         std::size_t size = str1.sz + str2.sz;
         newStr.sz = size;
         newStr.first = String::alloc.allocate(size);
-        std::char *p = std::uninitialized_copy(str1.begin(), str1.end(), newStr.first);
+        char *p = std::uninitialized_copy(str1.begin(), str1.end(), newStr.first);
         std::uninitialized_copy(str2.begin(), str2.end(), p);
         return newStr;
     }
     String operator+(const String &str1, const String &str2) {
         return add(str1, str2);
     }
-    std::iostream &operator<<(std::iostream &io, const String &str) {
-        std::cout << "operator<<" << endl;
-        std::char *b = str.begin();
+    std::ostream &operator<<(std::ostream &io, const String &str) {
+        std::cout << "operator<<" << std::endl;
+        char *b = str.begin();
         while (b != str.end()) {
             io << *b++;
         }
         io << endl;
         return io;
     }
-    //void test();
+    void test();
 }
 #endif
