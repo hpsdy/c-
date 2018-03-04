@@ -38,6 +38,7 @@ namespace user {
             return first + sz;
         }
         ~String() {
+            std::cout << "~ string" << std::endl;
             if (first) {
                 alloc.deallocate(first, sz);
             }
@@ -58,6 +59,7 @@ namespace user {
         return newStr;
     }
     String operator+(const String &str1, const String &str2) {
+        std::cout << "operator +" << std::endl;
         return add(str1, str2);
     }
     std::ostream &operator<<(std::ostream &io, const String &str) {
