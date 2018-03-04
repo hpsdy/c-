@@ -12,6 +12,6 @@ int main() {
     std::cout << s2;
     std::cout << s3;
     std::cout << s4;
-    test();
-    return std::EXIT_SUCESS;
+    user::test();
+    return EXIT_SUCCESS;
 }
