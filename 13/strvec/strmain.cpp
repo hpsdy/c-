@@ -6,7 +6,7 @@ int main() {
     user::String s2(s1);
     using user::String;
     String s3 = add(s1, s2);
-    String s4("最后一个")；
+    String s4("最后一个");
     s4 += s3;
     std::cout << s1;
     std::cout << s2;
