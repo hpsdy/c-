@@ -9,7 +9,7 @@ namespace user {
         friend String add(const String &str1, const String &str2);
         friend std::iostream &operator<<(std::iostream &io, const String &str);
         friend void test() {
-            std::cout << "friend func test" << endl;
+            std::cout << "friend func test" << std::endl;
         }
       public:
         String(): sz(0), first(nullptr) {}
@@ -39,8 +39,8 @@ namespace user {
         }
       private:
         std::size_t sz;
-        std::char *first;
-        static std::allocator<std::char> alloc;
+        char *first;
+        static std::allocator<char> alloc;
     };
     String add(const String &str1, const String &str2) {
         std::cout << "String add" << std::endl;
