@@ -21,6 +21,18 @@ namespace user {
             std::cout << "string construct" << std::endl;
             std::uninitialized_copy(str.begin(), str.end(), first);
         }
+        String &operator=(const String &str) {
+            std::cout << "operator =" << std::endl;
+            String *p = alloc.allocate(str.sz);
+            std::uninitialized_copy(str.begin(), str.end(), p);
+            if (first) {
+                alloc.deallocate(first, sz);
+            }
+            sz = str.sz;
+            first = p;
+            return *this;
+
+        }
         char *begin() const {
             std::cout << "const begin" << std::endl;
             return first;

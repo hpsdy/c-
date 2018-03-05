@@ -1,4 +1,5 @@
 #include "string.h"
+#include "strVec.h"
 #include <iostream>
 #include <cstdlib>
 int main() {
@@ -21,5 +22,14 @@ int main() {
     std::cout << s4;
     std::cout << "=======10=======" << std::endl;
     user::test();
+    std::cout << "=======11=======" << std::endl;
+    StrVec arr;
+    arr.push_back(s1);
+    arr.push_back(s2);
+    arr.push_back(s3);
+    arr.push_back(s4);
+    for (auto b = arr.begin(), e = arr.end(); b != e; ++b) {
+        std::cout << *b << std::endl;
+    }
     return EXIT_SUCCESS;
 }
