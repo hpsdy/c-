@@ -32,7 +32,7 @@ int main() {
     std::cout << "================" << std::endl;
     user::String cstr1 = "dashuaige";
     std::cout << "================" << std::endl;
-    user::String &&p = std::move(cstr1);
+    user::String &&p1 = std::move(cstr1);
     std::cout << "================" << std::endl;
     strarr.push_back(std::move(cstr1));
     std::cout << "================" << std::endl;
