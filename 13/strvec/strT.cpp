@@ -13,9 +13,9 @@ int main() {
     std::cout << "================" << std::endl;
     user::String str1 = "dashuaige";
     std::cout << "================" << std::endl;
-    user::String &&p = std::move(str);
+    user::String &&p = std::move(str1);
     std::cout << "================" << std::endl;
-    arr.push_back(std::move(str));
+    arr.push_back(std::move(str1));
     std::cout << "================" << std::endl;
     for (auto b = arr.begin(), e = arr.end(); b != e; ++b) {
         std::cout << *b << std::endl;
@@ -26,15 +26,15 @@ int main() {
     strVec strarr;
     strarr.push_back("abc");
     std::cout << "================" << std::endl;
-    user::String str = "qinhan";
+    user::String cstr = "qinhan";
     std::cout << "================" << std::endl;
-    strarr.push_back(str);
+    strarr.push_back(cstr);
     std::cout << "================" << std::endl;
-    user::String str1 = "dashuaige";
+    user::String cstr1 = "dashuaige";
     std::cout << "================" << std::endl;
-    user::String &&p = std::move(str);
+    user::String &&p = std::move(cstr1);
     std::cout << "================" << std::endl;
-    strarr.push_back(std::move(str));
+    strarr.push_back(std::move(cstr1));
     std::cout << "================" << std::endl;
     for (auto b = strarr.begin(), e = strarr.end(); b != e; ++b) {
         std::cout << *b << std::endl;
