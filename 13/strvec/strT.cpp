@@ -23,7 +23,7 @@ int main() {
     std::cout << "================" << std::endl;
     std::cout << "================" << std::endl;
     std::cout << "================" << std::endl;
-    strVec strarr;
+    StrVec strarr;
     strarr.push_back("abc");
     std::cout << "================" << std::endl;
     user::String cstr = "qinhan";
