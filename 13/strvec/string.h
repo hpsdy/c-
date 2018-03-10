@@ -21,6 +21,11 @@ namespace user {
             std::cout << "string construct" << std::endl;
             std::uninitialized_copy(str.begin(), str.end(), first);
         }
+        String(String &&str) noexcept: sz(str.sz), first(str.first) {
+            std::cout << "move construct" << std::endl;
+            str.sz = 0;
+            str.first = nullptr;
+        }
         String &operator=(const String &str) {
             std::cout << "operator =" << std::endl;
             char *p = alloc.allocate(str.sz);
@@ -32,6 +37,19 @@ namespace user {
             first = p;
             return *this;
 
+        }
+        String &operator=(String &&str) noexcept {
+            std::cout << "move =" << std::endl;
+            if (this != &str) {
+                if (first) {
+                    alloc.deallocate(first, sz);
+                }
+                sz = str.sz;
+                first = str.first;
+                str.sz = 0;
+                str.first = nullptr;
+            }
+            return *this;
         }
         char *begin() const {
             std::cout << "const begin" << std::endl;
@@ -60,31 +78,31 @@ namespace user {
         char *first;
         static std::allocator<char> alloc;
     };
-/*    String add(const String &str1, const String &str2) {
-        std::cout << "String add" << std::endl;
-        String newStr;
-        std::size_t size = str1.sz + str2.sz;
-        newStr.sz = size;
-        newStr.first = String::alloc.allocate(size);
-        char *p = std::uninitialized_copy(str1.begin(), str1.end(), newStr.first);
-        std::uninitialized_copy(str2.begin(), str2.end(), p);
-        return newStr;
-    }
-    String operator+(const String &str1, const String &str2) {
-        std::cout << "operator +" << std::endl;
-        return add(str1, str2);
-    }
-    std::ostream &operator<<(std::ostream &io, const String &str) {
-        std::cout << "operator<<" << std::endl;
-        char *b = str.begin();
-        while (b != str.end()) {
-            io << *b++;
+    /*    String add(const String &str1, const String &str2) {
+            std::cout << "String add" << std::endl;
+            String newStr;
+            std::size_t size = str1.sz + str2.sz;
+            newStr.sz = size;
+            newStr.first = String::alloc.allocate(size);
+            char *p = std::uninitialized_copy(str1.begin(), str1.end(), newStr.first);
+            std::uninitialized_copy(str2.begin(), str2.end(), p);
+            return newStr;
         }
-        io << std::endl;
-        return io;
-    }
-    void test();
-    std::allocator<char> String::alloc;*/
+        String operator+(const String &str1, const String &str2) {
+            std::cout << "operator +" << std::endl;
+            return add(str1, str2);
+        }
+        std::ostream &operator<<(std::ostream &io, const String &str) {
+            std::cout << "operator<<" << std::endl;
+            char *b = str.begin();
+            while (b != str.end()) {
+                io << *b++;
+            }
+            io << std::endl;
+            return io;
+        }
+        void test();
+        std::allocator<char> String::alloc;*/
     void test();
     std::ostream &operator<<(std::ostream &io, const String &str);
     String operator+(const String &str1, const String &str2);
