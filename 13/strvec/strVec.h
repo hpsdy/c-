@@ -67,6 +67,6 @@ class StrVec{
 		void free();
 		std::pair<String *,String *> alloc_n_copy(const String *,const String *);
 };
-std::allocator<std::string> strVec::alloc;
-std::allocator<String> StrVec::alloc;
+//std::allocator<std::string> strVec::alloc;
+//std::allocator<String> StrVec::alloc;
 #endif

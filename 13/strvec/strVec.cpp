@@ -1,5 +1,5 @@
 #include"strVec.h"
-#include<string>
+#include"string.h"
 void strVec::push_back(const std::string &str){
 	check_n_alloc();
 	alloc.construct(first_free++,str);
@@ -89,3 +89,34 @@ void StrVec::reallocate(){
 	cap = p+newCapCity;
 	
 }
+std::allocator<std::string> strVec::alloc;
+std::allocator<String> StrVec::alloc;
+
+namespace user{
+String add(const String &str1, const String &str2) {
+        std::cout << "String add" << std::endl;
+        String newStr;
+        std::size_t size = str1.sz + str2.sz;
+        newStr.sz = size;
+        newStr.first = String::alloc.allocate(size);
+        char *p = std::uninitialized_copy(str1.begin(), str1.end(), newStr.first);
+        std::uninitialized_copy(str2.begin(), str2.end(), p);
+        return newStr;
+}
+String operator+(const String &str1, const String &str2) {
+        std::cout << "operator +" << std::endl;
+        return add(str1, str2);
+}
+std::ostream &operator<<(std::ostream &io, const String &str) {
+        std::cout << "operator<<" << std::endl;
+        char *b = str.begin();
+        while (b != str.end()) {
+            io << *b++;
+        }
+        io << std::endl;
+        return io;
+}
+//void test();
+std::allocator<char> String::alloc;
+}
+//void user::test();

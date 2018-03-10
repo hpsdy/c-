@@ -23,7 +23,7 @@ namespace user {
         }
         String &operator=(const String &str) {
             std::cout << "operator =" << std::endl;
-            String *p = alloc.allocate(str.sz);
+            char *p = alloc.allocate(str.sz);
             std::uninitialized_copy(str.begin(), str.end(), p);
             if (first) {
                 alloc.deallocate(first, sz);
@@ -60,7 +60,7 @@ namespace user {
         char *first;
         static std::allocator<char> alloc;
     };
-    String add(const String &str1, const String &str2) {
+/*    String add(const String &str1, const String &str2) {
         std::cout << "String add" << std::endl;
         String newStr;
         std::size_t size = str1.sz + str2.sz;
@@ -84,6 +84,11 @@ namespace user {
         return io;
     }
     void test();
-    std::allocator<char> String::alloc;
+    std::allocator<char> String::alloc;*/
+    void test();
+    std::ostream &operator<<(std::ostream &io, const String &str);
+    String operator+(const String &str1, const String &str2);
+    String add(const String &str1, const String &str2);
+
 }
 #endif
