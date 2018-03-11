@@ -47,14 +47,17 @@ void strVec::reallocate() {
 
 
 void StrVec::push_back(const String &str) {
+    std::cout << "push_back" << std::endl;
     check_n_alloc();
     alloc.construct(first_free++, str);
 }
 std::pair<String *, String *> StrVec::alloc_n_copy(const String *b, const String *e) {
+    std::cout << "alloc_n_copy" << std::endl;
     String *p = alloc.allocate(e - b);
     return {p, std::uninitialized_copy(b, e, p)};
 }
 void StrVec::free() {
+    std::cout << "free" << std::endl;
     if (!elements) {
         return;
     }
@@ -64,11 +67,13 @@ void StrVec::free() {
     alloc.deallocate(elements, capacity());
 }
 StrVec::StrVec(const StrVec &p) {
+    std::cout << "StrVec StrVec &p" << std::endl;
     auto data = alloc_n_copy(p.begin(), p.end());
     elements = data.first;
     first_free = cap = data.second;
 }
 StrVec &StrVec::operator=(const StrVec &p) {
+    std::cout << "operator= StrVec &p" << std::endl;
     auto data = alloc_n_copy(p.begin(), p.end());
     free();
     elements = data.first;
@@ -76,6 +81,7 @@ StrVec &StrVec::operator=(const StrVec &p) {
     return *this;
 }
 void StrVec::reallocate() {
+    std::cout << "reallocate" << std::endl;
     std::size_t newCapCity = size() ? 2 * size() : 1;
     String *p = alloc.allocate(newCapCity);
     auto dest = p;
