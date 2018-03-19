@@ -4,10 +4,10 @@
 using namespace std;
 class Foo {
   public:
-    Foo();
+    Foo() = default;
     Foo sorted() &&;
     Foo sorted() const &;
-    ~Foo();
+    ~Foo() = default;
   private:
     vector<int> data;
 
