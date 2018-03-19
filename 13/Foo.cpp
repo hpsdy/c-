@@ -17,7 +17,16 @@ class Foo {
     }
     Foo sorted() &&;
     Foo sorted() const &;
-    ~Foo() = default;
+    ~Foo() {
+        cout << "析构函数" << endl;
+        data.clear();
+    }
+    void print() {
+        cout << "print" << endl;
+        for (auto &c : data) {
+            cout << c << endl;
+        }
+    }
   private:
     vector<int> data;
 
@@ -29,13 +38,14 @@ Foo Foo::sorted() && {
 }
 Foo Foo::sorted() const & {
     cout << "左值引用版本" << endl;
-    Foo ret(*this);
-    return ret.sorted();
-    //return Foo(*this).sorted();
+    //Foo ret(*this);
+    //return ret.sorted();
+    return Foo(*this).sorted();
 
 }
 int main(int argc, char const *argv[]) {
     Foo f;
-    f.sorted();
+    Foo c = f.sorted();
+    c.print();
     return 0;
 }
