@@ -11,7 +11,7 @@ class Foo {
         cout << "拷贝构造函数:" << this << endl;
         data = f.data;
     }
-    Foo(Foo &&f) {
+    Foo(Foo &&f) noexcept {
         cout << "移动构造函数:" << this << endl;
         data = std::move(f.data);
     }
@@ -45,7 +45,11 @@ Foo Foo::sorted() const & {
 }
 int main(int argc, char const *argv[]) {
     Foo f;
+    f.sorted();
+cout<<"================"<<endl;
     Foo c = f.sorted();
+cout<<"================"<<endl;
+    Foo d = std::move(f);
     c.print();
     return 0;
 }
