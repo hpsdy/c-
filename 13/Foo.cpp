@@ -25,7 +25,6 @@ Foo Foo::sorted() const & {
 
 }
 int main(int argc, char const *argv[]) {
-    /* code */
     Foo f;
     f.sorted();
     return 0;
