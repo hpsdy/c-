@@ -22,6 +22,9 @@ struct point {
             cur = pcur;
         }
     }
+    std::string &operator()(bool is, string &p1, string &p2) {
+        return is ? p1 : p2;
+    }
   private:
     std::vector<string> data;
     std::size_t size;
@@ -46,6 +49,9 @@ int main(int argc, char const *argv[]) {
         p.setCur(1);
         std::cout << p->size() << std::endl;
         std::cout << *p << std::endl;
+        p.setCur(4);
+        std::cout << p(true, "xxxooo", "oooxxx") << std::endl;
+        std::cout << p(false, "xxxooo", "oooxxx") << std::endl;
     } catch (std::runtime_error ext) {
         std::cout << "ext:" << ext.what() << std::endl;
     }
