@@ -17,12 +17,13 @@ struct point {
         return &this->operator*();
     }
     void setCur(std::size_t pcur) {
-        bool ret = check(cur);
+	std::cout<<size<<":"<<data.size()<<":"<<cur<<std::endl;
+        bool ret = check(pcur);
         if (ret) {
             cur = pcur;
         }
     }
-    std::string &operator()(bool is, string &p1, string &p2) {
+    const std::string &operator()(bool is,const string &p1,const string &p2) {
         return is ? p1 : p2;
     }
   private:
@@ -47,9 +48,10 @@ int main(int argc, char const *argv[]) {
         std::cout << *p << std::endl;
         std::cout << p->size() << std::endl;
         p.setCur(1);
+        p.setCur(1);
         std::cout << p->size() << std::endl;
         std::cout << *p << std::endl;
-        p.setCur(4);
+        p.setCur(2);
         std::cout << p(true, "xxxooo", "oooxxx") << std::endl;
         std::cout << p(false, "xxxooo", "oooxxx") << std::endl;
     } catch (std::runtime_error ext) {
