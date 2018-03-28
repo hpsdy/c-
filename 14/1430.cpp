@@ -13,9 +13,9 @@ struct point {
         return io;
 
     }
-    friend std::istream &operator<<(std::istream &io, const point &p) {
+    friend std::ostream &operator<<(std::ostream &io, const point &p) {
         for (const auto &c : p.data) {
-            io << c << std::endl
+            io << c << std::endl;
         }
         return io;
 
@@ -56,7 +56,7 @@ struct point {
 };
 
 std::istream &operator>>(std::istream &io, point &p);
-std::istream &operator<<(std::istream &io, const point &p);
+std::ostream &operator<<(std::ostream &io, const point &p);
 
 int main(int argc, char const *argv[]) {
     point p{"qinhan", "han"};
