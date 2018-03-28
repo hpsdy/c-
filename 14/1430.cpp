@@ -3,6 +3,7 @@
 #include <string>
 #include <initializer_list>
 #include <stdexcept>
+#include <algorithm>
 using namespace std;
 struct point {
     friend std::istream &operator>>(std::istream &io, point &p) {
@@ -62,7 +63,7 @@ class intCompare {
   public:
     intCompare(int num): initNum(num) {}
     bool operator()(int num) {
-        retrun num == initNum;
+        return num == initNum;
     }
   private:
     int initNum;
