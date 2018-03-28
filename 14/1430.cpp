@@ -5,6 +5,21 @@
 #include <stdexcept>
 using namespace std;
 struct point {
+    friend istream &operator>>(istream &io, point &p) {
+        std::string str;
+        istream &tmp = getline(io, string);
+        std::cout << "io status:" << tmp.good() << std::endl;
+        p.data.push_back(string);
+        return io;
+
+    }
+    friend istream &operator<<(istream &io, const point &p) {
+        for (const auto &c : p.data) {
+            io << c << std::endl
+        }
+        return io;
+
+    }
   public:
     point(std::initializer_list<string> strList): data(strList), size(data.size()) {
         std::cout << "构造函数" << std::endl;
@@ -17,13 +32,13 @@ struct point {
         return &this->operator*();
     }
     void setCur(std::size_t pcur) {
-	std::cout<<size<<":"<<data.size()<<":"<<cur<<std::endl;
+        std::cout << size << ":" << data.size() << ":" << cur << std::endl;
         bool ret = check(pcur);
         if (ret) {
             cur = pcur;
         }
     }
-    const std::string &operator()(bool is,const string &p1,const string &p2) {
+    const std::string &operator()(bool is, const string &p1, const string &p2) {
         return is ? p1 : p2;
     }
   private:
@@ -40,9 +55,12 @@ struct point {
     }
 };
 
+istream &operator>>(istream &io, point &p);
+istream &operator<<(istream &io, const point &p);
+
 int main(int argc, char const *argv[]) {
+    point p{"qinhan", "han"};
     try {
-        point p{"qinhan", "han"};
         std::cout << *p << std::endl;
         *p = "world";
         std::cout << *p << std::endl;
@@ -57,5 +75,7 @@ int main(int argc, char const *argv[]) {
     } catch (std::runtime_error ext) {
         std::cout << "ext:" << ext.what() << std::endl;
     }
+    std::cin >> p;
+    std::cout << p;
     return 0;
 }
