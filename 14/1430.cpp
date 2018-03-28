@@ -58,6 +58,16 @@ struct point {
 std::istream &operator>>(std::istream &io, point &p);
 std::ostream &operator<<(std::ostream &io, const point &p);
 
+class intCompare {
+  public:
+    intCompare(int num): initNum(num) {}
+    bool operator()(int num) {
+        retrun num == initNum;
+    }
+  private:
+    int initNum;
+};
+
 int main(int argc, char const *argv[]) {
     point p{"qinhan", "han"};
     try {
@@ -77,5 +87,13 @@ int main(int argc, char const *argv[]) {
     }
     std::cin >> p;
     std::cout << p;
+    std::vector<int> numarr{1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+    for (auto &c : numarr) {
+        std::cout << c << std::endl;
+    }
+    replace_if(numarr.begin(), numarr.end(), intCompare(6), 100);
+    for (auto &c : numarr) {
+        std::cout << c << std::endl;
+    }
     return 0;
 }
