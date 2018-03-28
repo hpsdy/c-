@@ -5,15 +5,15 @@
 #include <stdexcept>
 using namespace std;
 struct point {
-    friend istream &operator>>(istream &io, point &p) {
+    friend std::istream &operator>>(std::istream &io, point &p) {
         std::string str;
-        istream &tmp = getline(io, string);
+        istream &tmp = getline(io, str);
         std::cout << "io status:" << tmp.good() << std::endl;
-        p.data.push_back(string);
+        p.data.push_back(str);
         return io;
 
     }
-    friend istream &operator<<(istream &io, const point &p) {
+    friend std::istream &operator<<(std::istream &io, const point &p) {
         for (const auto &c : p.data) {
             io << c << std::endl
         }
@@ -55,8 +55,8 @@ struct point {
     }
 };
 
-istream &operator>>(istream &io, point &p);
-istream &operator<<(istream &io, const point &p);
+std::istream &operator>>(std::istream &io, point &p);
+std::istream &operator<<(std::istream &io, const point &p);
 
 int main(int argc, char const *argv[]) {
     point p{"qinhan", "han"};
