@@ -96,5 +96,10 @@ int main(int argc, char const *argv[]) {
     for (auto &c : numarr) {
         std::cout << c << std::endl;
     }
+    std::cout << "========" << std::endl;
+    int a = 10;
+    auto f = [a] {return ++a;};
+    std::cout << f() << std::endl;
+    std::cout << a << std::endl;
     return 0;
 }
