@@ -16,7 +16,7 @@ class checkString {
 int main(int argc, char const *argv[])
 {
 		
-/*	std::ifstream in("string.txt",std::ios::in|std::ios::binary);
+	std::ifstream in("string.txt",std::ios::in|std::ios::binary);
 //	char buf[3] = {'\0'};
 	char buf[3];
 	char c;
@@ -36,17 +36,11 @@ int main(int argc, char const *argv[])
 	std::stringstream strIo;
 	while(getline(in,str)){
 		std::cout<<"ori string2:"<<str<<":"<<str.size()<<std::endl;
-		std::cout<<"str1 state:"<<strIo.rdstate()<<std::endl;
-	//	strIo.clear();
-		std::cout<<"str2 state:"<<strIo.rdstate()<<std::endl;
-	//	strIo.ignore();
-		std::cout<<"str3 state:"<<strIo.rdstate()<<std::endl;
-		std::cout<<"str3 state:"<<strIo.eof()<<std::endl;
 		strIo.str(str);
 		std::string instr;
-		std::cout<<"str4 state:"<<strIo.rdstate()<<std::endl;
+		std::cout<<"str state:"<<strIo.state()<<std::endl;
 		while(strIo>>instr){
-			std::cout<<"instr state:"<<strIo.rdstate()<<std::endl;
+			std::cout<<"instr state:"<<strIo.state()<<std::endl;
 			std::cout<<"string2:"<<instr<<":"<<instr.size()<<std::endl;
 		}
 	}
@@ -62,16 +56,6 @@ int main(int argc, char const *argv[])
 		std::cout<<"x3:"<<x<<std::endl;
 	}
 	std::cout<<"========="<<std::endl;
-*/
-	std::string str;
-	std::cin>>str;
-	std::cout<<str<<std::endl;	
-	std::cin.ignore(3,'q');
-	std::cin>>str;
-	std::cout<<str<<std::endl;	
 
-	std::cout<<"==="<<std::endl;	
-	std::cin.ignore(4,'q');
-	
 	return 0;
 }
