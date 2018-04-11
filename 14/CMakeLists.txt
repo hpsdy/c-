@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 add_definitions(-std=c++11)
-set(CMAKE_CXX_COMPILER /usr/local/bin/g++)
+set(DCMAKE_CXX_COMPILER "/usr/local/bin/g++")
+set(DCMAKE_C_COMPILER  "/usr/local/bin/gcc")
 PROJECT(first)
 ADD_EXECUTABLE(first 1444.cpp)
