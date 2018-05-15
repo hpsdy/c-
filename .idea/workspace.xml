@@ -10,7 +10,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e614600a-82f2-411a-a736-e7468e37804e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/14/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13/foo.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14/1445.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14/except.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14/one.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14/one_1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/1528.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/1530.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/attribute.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/basket.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/bulk_quote.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/class.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/func_util.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/hong.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/quote.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/reference.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/virtual.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/x.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proto/rpc/proto/proto/echo.pb.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/c11/13/Strmain.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13/Foo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/13/Foo.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/14/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/14/CMakeLists.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -23,11 +46,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="textresult.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="textresult.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/12/textquery/textresult.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-17981">
+              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -62,22 +94,6 @@
               <item name="c-plus" type="b2602c69:ProjectViewProjectNode" />
               <item name="c-plus" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="c-plus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="c-plus" type="462c0819:PsiDirectoryNode" />
-              <item name="12" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="c-plus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="c-plus" type="462c0819:PsiDirectoryNode" />
-              <item name="12" type="462c0819:PsiDirectoryNode" />
-              <item name="textquery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="c-plus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="c-plus" type="462c0819:PsiDirectoryNode" />
-              <item name="15" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -111,12 +127,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526354851621</updated>
-      <workItem from="1526354853949" duration="3377000" />
+      <workItem from="1526354853949" duration="3894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3377000" />
+    <option name="totallyTimeSpent" value="3894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -148,17 +164,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4071">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/12/textquery/textresult.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17981">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
         </state>
       </provider>
     </entry>
