@@ -7,7 +7,7 @@
 int main() {
     a x;
     b y;
-    a.p();
-    b.p();
+    x.p();
+    x.p();
     return 0;
 }
