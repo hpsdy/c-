@@ -4,9 +4,21 @@
 
 #ifndef INC_15_QUERY_BASE_H
 #define INC_15_QUERY_BASE_H
-class query_base{
+
+#include "include/QueryResult.h"
+#include "include/TextQuery.h"
+#include <string>
+
+class query_base {
     friend class Query;
-    protected:
-    using line_no =
+
+protected:
+    virtual ~query_base() {}
+
+private:
+    virtual QueryResult eval(const TextQuery &) const =0;
+
+    virtual std::string req() const =0;
 };
+class Query;
 #endif //INC_15_QUERY_BASE_H
