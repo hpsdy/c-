@@ -12,7 +12,8 @@
     <list default="true" id="e614600a-82f2-411a-a736-e7468e37804e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/13/Foo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/13/Foo.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/15/class/a.h" beforeDir="false" afterPath="$PROJECT_DIR$/15/class/a.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15/class/b.h" beforeDir="false" afterPath="$PROJECT_DIR$/15/class/b.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15/class/c.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/15/class/c.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15/class/m.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/15/class/m.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="a.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="a.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/15/class/a.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            <state relative-caret-position="207">
+              <caret line="10" column="29" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -45,8 +46,8 @@
       <file leaf-file-name="m.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/15/class/m.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="207">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding>
                 <element signature="e#41#55#0" expanded="true" />
               </folding>
@@ -54,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="b.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/15/class/b.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="299">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -66,8 +67,8 @@
       <file leaf-file-name="c.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/15/class/c.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="184">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -130,10 +131,10 @@
         <option value="$PROJECT_DIR$/15/text/include/QueryResult.h" />
         <option value="$PROJECT_DIR$/15/text/src/TextQuery.cpp" />
         <option value="$PROJECT_DIR$/15/text/include/query_base.h" />
-        <option value="$PROJECT_DIR$/15/class/c.cpp" />
-        <option value="$PROJECT_DIR$/15/class/m.cpp" />
-        <option value="$PROJECT_DIR$/15/class/a.h" />
         <option value="$PROJECT_DIR$/15/class/b.h" />
+        <option value="$PROJECT_DIR$/15/class/m.cpp" />
+        <option value="$PROJECT_DIR$/15/class/c.cpp" />
+        <option value="$PROJECT_DIR$/15/class/a.h" />
       </list>
     </option>
   </component>
@@ -206,12 +207,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526354851621</updated>
-      <workItem from="1526354853949" duration="18738000" />
+      <workItem from="1526354853949" duration="18908000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18738000" />
+    <option name="totallyTimeSpent" value="18908000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1382" height="784" extended-state="6" />
@@ -308,34 +309,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/15/class/c.cpp">
+    <entry file="file://$PROJECT_DIR$/15/class/b.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="299">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/15/class/m.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="207">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding>
             <element signature="e#41#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/15/class/a.h">
+    <entry file="file://$PROJECT_DIR$/15/class/c.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        <state relative-caret-position="184">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/15/class/b.h">
+    <entry file="file://$PROJECT_DIR$/15/class/a.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="207">
+          <caret line="10" column="29" selection-end-line="15" />
         </state>
       </provider>
     </entry>

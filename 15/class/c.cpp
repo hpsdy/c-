@@ -7,9 +7,11 @@
 
 using namespace std;
 
+/*
 void a::p() {
     cout << "ap" << endl;
 }
+*/
 
 void b::p() {
     cout << "bp" << endl;

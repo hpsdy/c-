@@ -8,6 +8,6 @@ int main() {
     a x;
     b y;
     x.p();
-    x.p();
+    y.p();
     return 0;
 }

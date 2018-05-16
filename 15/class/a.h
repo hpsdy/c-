@@ -7,7 +7,9 @@
 
 
 struct a {
-    void p();
+    void p() {
+        cout << "ap" << endl;
+    }
 };
 
 #endif //C_PLUS_A_H
