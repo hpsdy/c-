@@ -7,7 +7,7 @@
 
 #include "a.h"
 
-class b : public a {
+struct b : public a {
     void p();
 };
 

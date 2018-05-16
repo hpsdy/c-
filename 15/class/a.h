@@ -6,7 +6,7 @@
 #define C_PLUS_A_H
 
 
-class a {
+struct a {
     void p();
 };
 
