@@ -20,5 +20,5 @@ private:
 
     virtual std::string req() const =0;
 };
-class Query;
+
 #endif //INC_15_QUERY_BASE_H

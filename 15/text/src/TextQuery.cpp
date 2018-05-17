@@ -35,16 +35,16 @@ TextQuery::TextQuery(std::string filename) : text(new std::vector<std::string>()
     fn.close();
 }
 
-QueryResult *TextQuery::query(std::string key) {
+QR TextQuery::query(std::string key) {
     auto &findRet = keymap.find(word);
     if (findRet == keymap.end()) {
-        return new QueryResult{"", std::set<int>(), std::vector<std::string>()};
+        return std::make_shared < QueryResult > {"", std::set<int>(), std::vector<std::string>()};
     } else {
         auto &scores = findRet.second;
         std::vector <std::string> tmpVector;
         for (const auto &c:scores) {
             tmpVector.push_back(text->at(c));
         }
-        return new QueryResult{findRet.first, scores, tmpVector};
+        return std::make_shared < QueryResult > {findRet.first, scores, tmpVector};
     }
 }

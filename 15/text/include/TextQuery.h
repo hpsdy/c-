@@ -17,10 +17,11 @@ class TextQuery {
 public:
     typedef shared_ptr <vector<string>> lineList;
     typedef map <string, set<int>> keyNumMap;
+    typedef shared_ptr <QueryResult> QR;
 
     TextQuery(string filename);
 
-    QueryResult query(string key);
+    QR query(string key);
 
     ~textquery() {
     }
