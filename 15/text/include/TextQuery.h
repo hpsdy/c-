@@ -14,12 +14,20 @@
 using namespace std;
 
 class TextQuery {
+    friend class AndQuery;
+
+    friend class NotQuery;
+
 public:
     typedef shared_ptr <vector<string>> lineList;
     typedef map <string, set<int>> keyNumMap;
     typedef shared_ptr <QueryResult> QR;
 
     TextQuery(string filename);
+
+    int textSize() {
+        return text->size();
+    }
 
     QR query(string key);
 
