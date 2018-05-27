@@ -10,17 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e614600a-82f2-411a-a736-e7468e37804e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/15/text/src/AndQuery.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15/text/src/NotQuery.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15/text/src/OrQuery.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/text/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13/Foo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/13/Foo.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15/text/include/AndQuery.h" beforeDir="false" afterPath="$PROJECT_DIR$/15/text/include/AndQuery.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15/text/include/BinaryQuery.h" beforeDir="false" afterPath="$PROJECT_DIR$/15/text/include/BinaryQuery.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15/text/include/NotQuery.h" beforeDir="false" afterPath="$PROJECT_DIR$/15/text/include/NotQuery.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15/text/include/OrQuery.h" beforeDir="false" afterPath="$PROJECT_DIR$/15/text/include/OrQuery.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15/text/include/TextQuery.h" beforeDir="false" afterPath="$PROJECT_DIR$/15/text/include/TextQuery.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15/text/src/NotQuery.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/15/text/src/NotQuery.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15/text/src/Query.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/15/text/src/Query.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +34,16 @@
         <entry file="file://$PROJECT_DIR$/15/text/include/TextQuery.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="174">
-              <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Query.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/15/text/include/Query.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-70">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -47,17 +51,8 @@
       <file leaf-file-name="TextQuery.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/15/text/src/TextQuery.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
+            <state>
               <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrQuery.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/15/text/include/OrQuery.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -65,7 +60,7 @@
       <file leaf-file-name="OrQuery.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/15/text/src/OrQuery.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state>
               <caret line="12" column="70" selection-start-line="11" selection-start-column="2" selection-end-line="12" selection-end-column="70" />
             </state>
           </provider>
@@ -74,17 +69,17 @@
       <file leaf-file-name="AndQuery.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/15/text/src/AndQuery.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
+            <state>
               <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NotQuery.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NotQuery.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/15/text/src/NotQuery.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="540">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -92,35 +87,35 @@
       <file leaf-file-name="Query.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/15/text/src/Query.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="420">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NotQuery.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/15/text/include/NotQuery.h">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/15/text/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="600">
+              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinaryQuery.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/15/text/include/BinaryQuery.h">
+      <file leaf-file-name="WordQuery.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/15/text/include/WordQuery.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="434">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryResult.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/15/text/include/QueryResult.h">
+      <file leaf-file-name="WordQuery.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/15/text/src/WordQuery.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="120">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -149,7 +144,6 @@
         <option value="$PROJECT_DIR$/15/class/a.h" />
         <option value="$PROJECT_DIR$/15/text/include/query_base.h" />
         <option value="$PROJECT_DIR$/15/text/include/Query.h" />
-        <option value="$PROJECT_DIR$/15/text/src/Query.cpp" />
         <option value="$PROJECT_DIR$/15/text/src/WordQuery.cpp" />
         <option value="$PROJECT_DIR$/15/text/include/WordQuery.h" />
         <option value="$PROJECT_DIR$/15/text/include/QueryResult.h" />
@@ -162,6 +156,8 @@
         <option value="$PROJECT_DIR$/15/text/src/AndQuery.cpp" />
         <option value="$PROJECT_DIR$/15/text/include/TextQuery.h" />
         <option value="$PROJECT_DIR$/15/text/src/NotQuery.cpp" />
+        <option value="$PROJECT_DIR$/15/text/src/Query.cpp" />
+        <option value="$PROJECT_DIR$/15/text/main.cpp" />
       </list>
     </option>
   </component>
@@ -170,6 +166,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -187,33 +186,19 @@
         <subPane>
           <expand>
             <path>
-              <item name="c-plus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="c-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="c++" type="b2602c69:ProjectViewProjectNode" />
+              <item name="c++" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="c-plus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="c-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="c++" type="b2602c69:ProjectViewProjectNode" />
+              <item name="c++" type="462c0819:PsiDirectoryNode" />
               <item name="15" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="c-plus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="c-plus" type="462c0819:PsiDirectoryNode" />
-              <item name="15" type="462c0819:PsiDirectoryNode" />
-              <item name="text" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="c-plus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="c-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="c++" type="b2602c69:ProjectViewProjectNode" />
+              <item name="c++" type="462c0819:PsiDirectoryNode" />
               <item name="15" type="462c0819:PsiDirectoryNode" />
               <item name="text" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="c-plus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="c-plus" type="462c0819:PsiDirectoryNode" />
-              <item name="15" type="462c0819:PsiDirectoryNode" />
-              <item name="text" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -225,6 +210,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -251,33 +237,34 @@
       <workItem from="1526354853949" duration="26897000" />
       <workItem from="1526620964904" duration="6000" />
       <workItem from="1527077379176" duration="14134000" />
+      <workItem from="1527406220424" duration="2116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41037000" />
+    <option name="totallyTimeSpent" value="43153000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498452" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498452" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="CMake" order="7" visible="true" weight="0.34818482" />
+      <window_info anchor="bottom" id="CMake" order="7" weight="0.34680852" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" sideWeight="0.501548" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +274,62 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/15/text/include/OrQuery.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15/text/src/OrQuery.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="70" selection-start-line="11" selection-start-column="2" selection-end-line="12" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15/text/src/AndQuery.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15/text/src/Query.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15/text/include/NotQuery.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15/text/include/BinaryQuery.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15/text/include/QueryResult.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15/text/src/NotQuery.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/15/text/include/TextQuery.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
@@ -474,20 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/15/text/src/WordQuery.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/15/text/include/Query.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/15/text/include/query_base.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -502,80 +531,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/15/text/include/WordQuery.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/15/text/include/OrQuery.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state>
           <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/15/text/include/QueryResult.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
+        <state>
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/15/text/include/BinaryQuery.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
+        <state>
           <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/15/text/include/NotQuery.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state>
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/15/text/src/OrQuery.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
+        <state>
           <caret line="12" column="70" selection-start-line="11" selection-start-column="2" selection-end-line="12" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/15/text/src/AndQuery.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state>
           <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/15/text/src/Query.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/15/text/src/TextQuery.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
+        <state>
           <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15/text/src/NotQuery.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/15/text/include/TextQuery.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/15/text/src/NotQuery.cpp">
+    <entry file="file://$PROJECT_DIR$/15/text/src/WordQuery.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="120">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15/text/include/WordQuery.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15/text/include/Query.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15/text/src/Query.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15/text/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
         </state>
       </provider>
     </entry>
