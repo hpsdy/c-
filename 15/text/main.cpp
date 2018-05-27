@@ -8,20 +8,20 @@ int main(int argc, char *argv[]) {
     while (((opt = getopt(argc, args, "c:hv")) != -1)) {
         switch (opt) {
             case 'c':
-                printf("c:%s", optarg);
+                printf("c:%s\n", optarg);
                 break;
             case 'h':
-                printf("h:%s", optarg);
+                printf("h:%s\n", optarg);
                 break;
             case 'v':
-                printf("v:%s", optarg);
+                printf("v:%s\n", optarg);
                 break;
             case '?':
-                printf("?:%s", optarg);
-                printf("??:%s", optopt);
+                printf("?:%s\n", optarg);
+                printf("??:%s\n", optopt);
                 break;
             default:
-                print_usage();
+                printf("defalut:%s,default:%s\n", optarg, optopt);
                 break;
         }
     }
