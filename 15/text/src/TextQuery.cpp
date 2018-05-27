@@ -1,7 +1,7 @@
 //
 // Created by qinhan on 2018/5/16.
 //
-#include "include/TextQuery.h"
+#include "../include/TextQuery.h"
 #include <fstream>
 #include <sstream>
 #include <stdexcept>
