@@ -10,16 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e614600a-82f2-411a-a736-e7468e37804e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/15/cmake/t1/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15/cmake/t1/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15/text/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15/text/src/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15/text/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/15/text/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15/text/src/Query.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/15/text/src/Query.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15/text/src/TextQuery.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/15/text/src/TextQuery.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15/text/src/WordQuery.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/15/text/src/WordQuery.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15/cmake/t1/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/15/cmake/t1/CMakeLists.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/15/cmake/t1/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="5" column="29" selection-end-line="5" selection-end-column="30" />
+              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -255,12 +246,12 @@
       <workItem from="1526354853949" duration="26897000" />
       <workItem from="1526620964904" duration="6000" />
       <workItem from="1527077379176" duration="14134000" />
-      <workItem from="1527406220424" duration="7177000" />
+      <workItem from="1527406220424" duration="7624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48214000" />
+    <option name="totallyTimeSpent" value="48661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -639,7 +630,7 @@
     <entry file="file://$PROJECT_DIR$/15/cmake/t1/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="5" column="29" selection-end-line="5" selection-end-column="30" />
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
     </entry>
