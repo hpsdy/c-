@@ -10,11 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e614600a-82f2-411a-a736-e7468e37804e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/15/cmake/t2/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15/cmake/t2/src/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15/cmake/t2/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15/cmake/t1/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/15/cmake/t1/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15/cmake/t2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/15/cmake/t2/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15/cmake/t2/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/15/cmake/t2/src/CMakeLists.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +35,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/15/cmake/t2/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+              <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/15/cmake/t1/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -56,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/15/cmake/t2/src/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="29" selection-start-column="29" selection-end-column="29" />
+              <caret column="52" selection-start-column="52" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -115,8 +130,8 @@
         <option value="$PROJECT_DIR$/15/text/src/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/15/cmake/t1/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/15/cmake/t1/main.cpp" />
-        <option value="$PROJECT_DIR$/15/cmake/t2/src/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/15/cmake/t2/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/15/cmake/t2/src/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -228,12 +243,12 @@
       <workItem from="1526354853949" duration="26897000" />
       <workItem from="1526620964904" duration="6000" />
       <workItem from="1527077379176" duration="14134000" />
-      <workItem from="1527406220424" duration="8548000" />
+      <workItem from="1527406220424" duration="9236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49585000" />
+    <option name="totallyTimeSpent" value="50273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -550,13 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/15/cmake-build-debug/CMakeFiles/clion-log.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -571,13 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/15/cmake/t1/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -602,17 +603,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/15/cmake/t2/src/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/15/cmake/t1/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        <state relative-caret-position="150">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/15/cmake/t2/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15/cmake/t2/src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="52" selection-start-column="52" selection-end-column="52" />
         </state>
       </provider>
     </entry>
