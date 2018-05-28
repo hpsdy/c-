@@ -10,10 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e614600a-82f2-411a-a736-e7468e37804e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/15/cmake/t2/doc/hello.text" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15/cmake/t2/readme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15/cmake/t2/runhello.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/15/cmake/t2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/15/cmake/t2/CMakeLists.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -33,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/15/cmake/t2/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -308,12 +304,12 @@
       <workItem from="1527077379176" duration="14134000" />
       <workItem from="1527406220424" duration="9405000" />
       <workItem from="1527519413223" duration="318000" />
-      <workItem from="1527519850883" duration="2193000" />
+      <workItem from="1527519850883" duration="2646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52953000" />
+    <option name="totallyTimeSpent" value="53406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -696,7 +692,7 @@
     <entry file="file://$PROJECT_DIR$/15/cmake/t2/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>
