@@ -3,7 +3,7 @@
 //
 #include <cstdio>
 
-int main() {
-    printf("%s", "hello world");
+int func1() {
+    printf("%s", "hello func1");
     return 0;
 }
