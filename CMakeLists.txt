@@ -810,4 +810,4 @@ add_executable(c_plus
         test/virtual.i
         test/x.cpp
         test/xxyy.cpp
-        Sales_item.h 15/text/include/TextQuery.h 15/text/include/QueryResult.h 15/text/src/TextQuery.cpp 15/class/a.h 15/class/b.h 15/class/c.cpp 15/class/m.cpp 15/text/include/Query.h 15/text/src/Query.cpp 15/text/src/WordQuery.cpp 15/text/src/OrQuery.cpp 15/text/src/AndQuery.cpp 15/text/src/NotQuery.cpp 15/text/main.cpp 15/cmake/t1/main.cpp 15/cmake/t2/run.cpp 15/cmake/t2/src/func2.cpp)
+        Sales_item.h 15/text/include/TextQuery.h 15/text/include/QueryResult.h 15/text/src/TextQuery.cpp 15/class/a.h 15/class/b.h 15/class/c.cpp 15/class/m.cpp 15/text/include/Query.h 15/text/src/Query.cpp 15/text/src/WordQuery.cpp 15/text/src/OrQuery.cpp 15/text/src/AndQuery.cpp 15/text/src/NotQuery.cpp 15/text/main.cpp 15/cmake/t1/main.cpp 15/cmake/t2/run.cpp 15/cmake/t2/src/func2.cpp 15/cmake/t3/lib/hello.h 15/cmake/t3/lib/hello.cpp)
