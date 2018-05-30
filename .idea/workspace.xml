@@ -29,8 +29,8 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/15/cmake/t3/lib/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            <state relative-caret-position="360">
+              <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -244,7 +244,7 @@
       <workItem from="1527406220424" duration="9405000" />
       <workItem from="1527519413223" duration="318000" />
       <workItem from="1527519850883" duration="2741000" />
-      <workItem from="1527693428977" duration="2051000" />
+      <workItem from="1527693428977" duration="2743000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1527694112026</created>
@@ -281,11 +281,25 @@
       <option name="project" value="LOCAL" />
       <updated>1527695405840</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add">
+      <created>1527695493001</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1527695493001</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add">
+      <created>1527695577276</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1527695577276</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55552000" />
+    <option name="totallyTimeSpent" value="56244000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -671,8 +685,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/15/cmake/t3/lib/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        <state relative-caret-position="360">
+          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
         </state>
       </provider>
     </entry>
