@@ -1,3 +1,4 @@
+syntax="proto2";
 package world;
 message hello_w{
 	required int32 id=1;
