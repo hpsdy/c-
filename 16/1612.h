@@ -15,11 +15,11 @@
 template<typename T>
 class Blob {
 public:
-    typedef std::vector<T>::size_type size_type;
+    typedef typename std::vector<T>::size_type size_type;
 
     Blob();
 
-    Blob(std::initializer_list <T> &il);
+    Blob(const std::initializer_list <T> &il);
 
     size_type size() {
         printf("%s\n", "size_type");
@@ -62,16 +62,16 @@ public:
 private:
     std::shared_ptr <std::vector<T>> data;
 
-    void check(size_type i, const std::string &msg) const;
+    void check(size_type i, const std::string &msg = "default error") const;
 };
 
 template<typename T>
 Blob<T>::Blob():data(new std::vector<T>()) {}
 
 template<typename T>
-Blob<T>::Blob(std::initializer_list <T> &il):data(new std::vector<T>(il)) {}
+Blob<T>::Blob(const std::initializer_list <T> &il):data(new std::vector<T>(il)) {}
 
-template<T>
+template<typename T>
 void Blob<T>::pop_back() {
     data->pop_back();
 }
@@ -101,7 +101,7 @@ T &Blob<T>::operator[](size_type i) const {
 }
 
 template<typename T>
-void Blob<T>::check(size_type i, const std::string &msg = "default error") const {
+void Blob<T>::check(size_type i, const std::string &msg) const {
     if (i < size()) {
         return;
     } else {
