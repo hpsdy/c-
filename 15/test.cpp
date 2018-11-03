@@ -1,13 +1,17 @@
 #include<iostream>
 #include<string>
+#include<typeinfo>
 //#include"func_util.h"
 using namespace std;
 //using namespace func;
 #define SPLIT "||"
+class test{
+};
 int main(){
 	bool xb=true;
 	xb?(cout<<"true"<<endl):(cout<<"false"<<endl);
 
+	printf("%s/%s","asda","Asdas");
 	return 0;
 	/*const int num=10;
 	cout<<"num*:"<<&num<<endl;

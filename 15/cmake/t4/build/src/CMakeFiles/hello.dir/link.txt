@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/hello.dir/main.cpp.o  -o ../bin/hello -rdynamic /home/work/github/c-plus/15/cmake/t3/install/lib/libhello.so /home/work/github/c-plus/15/cmake/t3/install/lib/libhello.so -Wl,-rpath,/home/work/github/c-plus/15/cmake/t3/install/lib 

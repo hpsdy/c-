@@ -322,6 +322,21 @@ class hello_w : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_str();
   void set_allocated_str(::std::string* str);
 
+  // optional string test = 6;
+  bool has_test() const;
+  void clear_test();
+  static const int kTestFieldNumber = 6;
+  const ::std::string& test() const;
+  void set_test(const ::std::string& value);
+  #if LANG_CXX11
+  void set_test(::std::string&& value);
+  #endif
+  void set_test(const char* value);
+  void set_test(const char* value, size_t size);
+  ::std::string* mutable_test();
+  ::std::string* release_test();
+  void set_allocated_test(::std::string* test);
+
   // required .world.hello_w.ctype oc = 4;
   bool has_oc() const;
   void clear_oc();
@@ -346,6 +361,8 @@ class hello_w : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   void clear_has_str();
   void set_has_oc();
   void clear_has_oc();
+  void set_has_test();
+  void clear_has_test();
 
   // helper for ByteSizeLong()
   size_t RequiredFieldsByteSizeFallback() const;
@@ -355,6 +372,7 @@ class hello_w : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   mutable int _cached_size_;
   ::google::protobuf::RepeatedPtrField< ::std::string> some_;
   ::google::protobuf::internal::ArenaStringPtr str_;
+  ::google::protobuf::internal::ArenaStringPtr test_;
   ::world::hello_w_ctype* oc_;
   ::google::protobuf::int32 id_;
   friend struct ::protobuf_world_5fbak_2eproto::TableStruct;
@@ -464,13 +482,13 @@ inline void hello_w_ctype::set_allocated_desc(::std::string* desc) {
 
 // required int32 id = 1;
 inline bool hello_w::has_id() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
+  return (_has_bits_[0] & 0x00000008u) != 0;
 }
 inline void hello_w::set_has_id() {
-  _has_bits_[0] |= 0x00000004u;
+  _has_bits_[0] |= 0x00000008u;
 }
 inline void hello_w::clear_has_id() {
-  _has_bits_[0] &= ~0x00000004u;
+  _has_bits_[0] &= ~0x00000008u;
 }
 inline void hello_w::clear_id() {
   id_ = 0;
@@ -620,13 +638,13 @@ hello_w::mutable_some() {
 
 // required .world.hello_w.ctype oc = 4;
 inline bool hello_w::has_oc() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
+  return (_has_bits_[0] & 0x00000004u) != 0;
 }
 inline void hello_w::set_has_oc() {
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000004u;
 }
 inline void hello_w::clear_has_oc() {
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000004u;
 }
 inline void hello_w::clear_oc() {
   if (oc_ != NULL) oc_->Clear();
@@ -670,6 +688,69 @@ inline void hello_w::set_allocated_oc(::world::hello_w_ctype* oc) {
   }
   oc_ = oc;
   // @@protoc_insertion_point(field_set_allocated:world.hello_w.oc)
+}
+
+// optional string test = 6;
+inline bool hello_w::has_test() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void hello_w::set_has_test() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void hello_w::clear_has_test() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void hello_w::clear_test() {
+  test_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clear_has_test();
+}
+inline const ::std::string& hello_w::test() const {
+  // @@protoc_insertion_point(field_get:world.hello_w.test)
+  return test_.GetNoArena();
+}
+inline void hello_w::set_test(const ::std::string& value) {
+  set_has_test();
+  test_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:world.hello_w.test)
+}
+#if LANG_CXX11
+inline void hello_w::set_test(::std::string&& value) {
+  set_has_test();
+  test_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:world.hello_w.test)
+}
+#endif
+inline void hello_w::set_test(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  set_has_test();
+  test_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:world.hello_w.test)
+}
+inline void hello_w::set_test(const char* value, size_t size) {
+  set_has_test();
+  test_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:world.hello_w.test)
+}
+inline ::std::string* hello_w::mutable_test() {
+  set_has_test();
+  // @@protoc_insertion_point(field_mutable:world.hello_w.test)
+  return test_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* hello_w::release_test() {
+  // @@protoc_insertion_point(field_release:world.hello_w.test)
+  clear_has_test();
+  return test_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void hello_w::set_allocated_test(::std::string* test) {
+  if (test != NULL) {
+    set_has_test();
+  } else {
+    clear_has_test();
+  }
+  test_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), test);
+  // @@protoc_insertion_point(field_set_allocated:world.hello_w.test)
 }
 
 #ifdef __GNUC__

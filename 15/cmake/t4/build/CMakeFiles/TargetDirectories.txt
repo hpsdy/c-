@@ -1,0 +1,2 @@
+/home/work/github/c-plus/15/cmake/t4/build/src/CMakeFiles/hello.dir
+/home/work/github/c-plus/15/cmake/t4/build/CMakeFiles/tmain.dir

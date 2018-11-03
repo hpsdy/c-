@@ -70,7 +70,7 @@ class intCompare {
 };
 
 int main(int argc, char const *argv[]) {
-    point p{"qinhan", "han"};
+    point p({"qinhan", "han"});
     try {
         std::cout << *p << std::endl;
         *p = "world";
@@ -98,7 +98,7 @@ int main(int argc, char const *argv[]) {
     }
     std::cout << "========" << std::endl;
     int a = 10;
-    auto f = [a] {return ++a;};
+    auto f = [&a] {return ++a;};
     std::cout << f() << std::endl;
     std::cout << a << std::endl;
     return 0;

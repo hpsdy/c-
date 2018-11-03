@@ -1,0 +1,5 @@
+/home/work/github/c-plus/15/cmake/t3/install/lib/libhello.so.3.2
+/home/work/github/c-plus/15/cmake/t3/install/lib/libhello.so.2
+/home/work/github/c-plus/15/cmake/t3/install/lib/libhello.so
+/home/work/github/c-plus/15/cmake/t3/install/lib/libhello.a
+/home/work/github/c-plus/15/cmake/t3/install/include/hello/hello.h

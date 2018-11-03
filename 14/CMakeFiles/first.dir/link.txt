@@ -1,0 +1,1 @@
+/usr/local/bin/g++       CMakeFiles/first.dir/1444.cpp.o  -o first -rdynamic 

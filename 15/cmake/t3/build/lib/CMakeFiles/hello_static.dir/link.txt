@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../bin/libhello.a  CMakeFiles/hello_static.dir/hello.cpp.o
+/usr/bin/ranlib ../bin/libhello.a

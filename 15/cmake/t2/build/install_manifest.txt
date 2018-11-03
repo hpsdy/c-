@@ -1,0 +1,4 @@
+/tmp/cmake/share/doc/cmake/t2/readme
+/tmp/cmake/qbin/runhello.sh
+/tmp/cmake/qbin/t1
+/tmp/cmake/share/doc/cmake/t2/hello.text

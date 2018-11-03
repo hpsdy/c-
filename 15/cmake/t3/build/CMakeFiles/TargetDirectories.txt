@@ -1,0 +1,2 @@
+/home/work/github/c-plus/15/cmake/t3/build/lib/CMakeFiles/hello.dir
+/home/work/github/c-plus/15/cmake/t3/build/lib/CMakeFiles/hello_static.dir

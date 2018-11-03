@@ -11,6 +11,7 @@
 #include <string>
 #include <cstdio>
 #include <stdexcept>
+#include <set>
 
 template<typename T>
 class Blob {

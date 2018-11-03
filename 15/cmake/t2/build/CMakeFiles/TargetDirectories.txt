@@ -1,0 +1,2 @@
+/home/work/github/c-plus/15/cmake/t2/build/src/CMakeFiles/func.dir
+/home/work/github/c-plus/15/cmake/t2/build/CMakeFiles/t1.dir
